@@ -1,65 +1,182 @@
 import Image from "next/image";
+import Link from "next/link";
+
+import { ProjectMedia } from "@/components/ProjectMedia";
+import { SectionHeading } from "@/components/SectionHeading";
+import { SocialLinks } from "@/components/SocialLinks";
+import {
+  focusAreas,
+  projects,
+  recognition,
+  site,
+} from "@/data/site";
 
 export default function Home() {
+  const featuredProjects = projects
+    .filter((project) => project.featured)
+    .slice(0, 4);
+
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
+    <>
+      <section className="hero container">
+        <div className="hero-grid">
+          <div className="hero-content">
+            <h1>Software Engineer at Datadog.</h1>
+
+            <p className="hero-copy">{site.summary}</p>
+
+            <div className="button-row">
+              <Link
+                className="button primary button-projects"
+                href="/projects"
+              >
+                Projects
+              </Link>
+
+              <Link
+                className="button secondary button-experience"
+                href="/experience"
+              >
+                Experience
+              </Link>
+
+              <Link
+                className="button secondary button-contact"
+                href="/contact"
+              >
+                Contact
+              </Link>
+            </div>
+
+            <SocialLinks />
+          </div>
+
+          <aside
+            className="hero-profile-card"
+            aria-label="Andrew Mesa portrait"
+          >
+            <div className="hero-photo-wrap">
+              <Image
+                src="/images/andrew-mesa-headshot.jpg"
+                alt="Andrew Mesa"
+                fill
+                preload
+                quality={95}
+                sizes="(max-width: 620px) calc(100vw - 1.5rem), (max-width: 980px) 420px, 330px"
+              />
+            </div>
+
+            <div className="hero-portrait-caption">
+              <div className="portrait-heading">
+                <strong>Andrew Mesa</strong>
+                <span className="portrait-location">New York, NY</span>
+              </div>
+
+              <span className="portrait-role">
+                Software Engineer at Datadog
+              </span>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section className="section container">
+        <SectionHeading
+          title="What I work on"
+          copy="Developer infrastructure, full-stack applications, accessible AI tools, embedded systems, and technical research."
         />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+
+        <div className="focus-grid three-column">
+          {focusAreas.map((area) => (
+            <article className="focus-card" key={area.title}>
+              <h3>{area.title}</h3>
+              <p>{area.description}</p>
+            </article>
+          ))}
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+      </section>
+
+      <section className="section container">
+        <SectionHeading
+          title="Selected work"
+          copy="A selection of software, accessibility, data, and research projects."
+          action={
+            <Link className="text-link" href="/projects">
+              All projects →
+            </Link>
+          }
+        />
+
+        <div className="featured-projects">
+          {featuredProjects.map((project) => (
+            <article
+              className="featured-project"
+              key={project.title}
+            >
+              <ProjectMedia {...project} compact />
+
+              <div className="project-card-body">
+                <div className="project-meta">
+                  <span>{project.category}</span>
+                  <span>{project.period}</span>
+                </div>
+
+                <h3>{project.title}</h3>
+
+                <p>{project.description}</p>
+
+                <div className="card-links">
+                  {project.links.map((link) => (
+                    <a
+                      href={link.href}
+                      key={link.href}
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      {link.label} ↗
+                    </a>
+                  ))}
+                </div>
+              </div>
+            </article>
+          ))}
         </div>
-      </main>
-    </div>
+      </section>
+
+      <section className="section container">
+        <div className="recognition-panel">
+          <div>
+            <h2>Leadership and recognition</h2>
+
+            <p>
+              Selected involvement and recognition through HSF,
+              SHPE, FIRST Robotics, Scouting, WPI, and other
+              programs.
+            </p>
+
+            <Link className="text-link" href="/community">
+              Community and awards →
+            </Link>
+          </div>
+
+          <div className="recognition-list">
+            {recognition.slice(0, 5).map((item) => (
+              <a
+                href={item.href}
+                target="_blank"
+                rel="noreferrer"
+                key={item.title}
+              >
+                <span>{item.title}</span>
+
+                <small>
+                  {item.date} · {item.issuer}
+                </small>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
