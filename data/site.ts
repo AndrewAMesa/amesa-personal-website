@@ -421,7 +421,7 @@ export const organizations = [
     name: "ColorStack",
     href: "https://www.colorstack.org/",
     period: "October 2024 — Present",
-    roles: ["Alumnus (2025 - Present)", "Member (2024 - 2025)"],
+    roles: ["Alumnus (2025 — Present)", "Member (2024 — 2025)"],
     description:
       "Professional community affiliation listed on my LinkedIn headline. Add dates and additional details here when available.",
   },
