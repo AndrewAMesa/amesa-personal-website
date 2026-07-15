@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useMemo, useState } from "react";
 import { photographs } from "@/data/site";
 
-const categories = ["All", "Landscape", "City", "Travel", "People"] as const;
+const categories = ["All", "Landscape", "City", "Animal", "People"] as const;
 
 export function PhotographyGallery() {
   const [activeCategory, setActiveCategory] = useState<(typeof categories)[number]>("All");
