@@ -6,7 +6,7 @@ export default function AboutPage() {
   return (
     <section className="page-section container">
       <div className="page-intro">
-        <h1>Software engineering background and technical skills.</h1>
+        <h1>Software engineering background and technical skills</h1>
       </div>
 
       <div className="about-layout">

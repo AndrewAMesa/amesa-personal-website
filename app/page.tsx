@@ -21,7 +21,7 @@ export default function Home() {
       <section className="hero container">
         <div className="hero-grid">
           <div className="hero-content">
-            <h1>Software Engineer at Datadog.</h1>
+            <h1>Software Engineer at Datadog</h1>
 
             <p className="hero-copy">{site.summary}</p>
 

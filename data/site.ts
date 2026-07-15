@@ -390,7 +390,7 @@ export const organizations = [
     name: "Hispanic Scholarship Fund",
     href: "https://www.hsf.net/",
     period: "Jun 2021 — Present",
-    roles: ["Advisory Council Member (2026 — Present)", "Alumnus (2025 — Present)", "Mentor-in-Training (2024)", "Scholar (2021 — 2025)"],
+    roles: ["Advisory Council Member (2026 — Present)", "Alumnus (2025 — Present)", "Volunteer Lead (2026)", "Mentor-in-Training (2024)", "Scholar (2021 — 2025)"],
     description:
       "Selected as an HSF Scholar in 2021 from a large national applicant pool and reselected in 2022, 2023, and 2024 for academic and extracurricular achievement.",
   },
@@ -423,11 +423,22 @@ export const organizations = [
     period: "October 2024 — Present",
     roles: ["Alumnus (2025 — Present)", "Member (2024 — 2025)"],
     description:
-      "Professional community affiliation listed on my LinkedIn headline. Add dates and additional details here when available.",
+      "Served as an active member of ColorStack throughout college and am now a ColorStack alumnus.",
   },
 ];
 
 export const volunteering = [
+  {
+    role: "Volunteer Lead",
+    organization: "Hispanic Scholarship Fund",
+    href: "https://www.hsf.net/",
+    period: "Jul 2026",
+    cause: "Education and professional development",
+    highlights: [
+      "- Welcomed and guided newly selected scholars during the HSF scholar celebration.",
+      "- Answered questions and offered support to newly admitted HSF scholars and their families.",
+    ],
+  },
   {
     role: "Mentor-in-Training",
     organization: "Hispanic Scholarship Fund",
@@ -673,7 +684,8 @@ export const projects: Project[] = [
     description:
       "A task manager with create, update, delete, authentication, and priority-based sorting functionality.",
     tags: ["Next.js", "Tailwind CSS", "NextAuth", "TypeScript"],
-    links: [{ label: "GitHub repository", href: "https://github.com/AndrewAMesa/Task-Tracking-Website" }],
+    links: [{label: "Live application", href: "https://a4-andrew-a-mesa.vercel.app/"},
+            { label: "GitHub repository", href: "https://github.com/AndrewAMesa/Task-Tracking-Website" },],
   },
   {
     title: "Build a Board Game",
@@ -698,7 +710,8 @@ export const projects: Project[] = [
     period: "High school",
     description: "A browser-based game created while learning React, JavaScript, HTML, and CSS.",
     tags: ["React", "JavaScript", "HTML", "CSS", "Game Development"],
-    links: [{ label: "GitHub repository", href: "https://github.com/AndrewAMesa/Square-Push" }],
+    links: [{label: "Live application", href: "https://andrewamesa.github.io/Square-Push/"},
+            { label: "GitHub repository", href: "https://github.com/AndrewAMesa/Square-Push" }],
   },
   {
     title: "Platformer",
@@ -706,7 +719,8 @@ export const projects: Project[] = [
     period: "High school",
     description: "A platform game created while learning Python and Pygame.",
     tags: ["Python", "Pygame", "Game Development"],
-    links: [{ label: "GitHub repository", href: "https://github.com/AndrewAMesa/Platformer" }],
+    links: [{label: "Live application", href: "https://andrewamesa.github.io/Platformer/"},
+            { label: "GitHub repository", href: "https://github.com/AndrewAMesa/Platformer" }],
   },
   {
     title: "Roguelike",
@@ -714,7 +728,8 @@ export const projects: Project[] = [
     period: "High school",
     description: "A roguelike game created while learning Python, Pygame, and procedural generation.",
     tags: ["Python", "Pygame", "Procedural Generation"],
-    links: [{ label: "GitHub repository", href: "https://github.com/AndrewAMesa/Roguelike" }],
+    links: [{label: "Live application", href: "https://andrewamesa.github.io/Roguelike/"},
+      { label: "GitHub repository", href: "https://github.com/AndrewAMesa/Roguelike" }],
   },
 ];
 
@@ -761,7 +776,7 @@ export const documents: Array<{
     title: "AP Capstone Research Paper",
     type: "Research Paper",
     description:
-      "Add the elderly well-being research paper to public/documents and update this entry with the local file path.",
+      "Research paper examining elderly well-being and factors that influence healthy aging and quality of life.",
     href: "https://docs.google.com/document/d/1Jh5QwGUpWQuS7lRmZgdmHF72N69ff_Pz8jctEjzKxUU/edit?usp=sharing",
     external: true,
   },
@@ -777,7 +792,7 @@ export const documents: Array<{
 
 export type Photograph = {
   title: string;
-  category: "Landscape" | "City" | "Travel" | "People";
+  category: "Landscape" | "City" | "Animal" | "People";
   location: string;
   src: string;
   alt: string;
@@ -786,51 +801,51 @@ export type Photograph = {
 
 export const photographs: Photograph[] = [
   {
-    title: "Featured landscape",
-    category: "Landscape",
-    location: "Add location",
-    src: "",
-    alt: "Add a description of the photograph",
+    title: "Neighborhood Watch",
+    category: "Animal",
+    location: "Sarajevo, Bosnia",
+    src: "/photography/Bosnia_Cat_Sunset.jpg",
+    alt: "A local cat keeping an eye on the neighborhood during golden hour",
     orientation: "landscape",
   },
-  {
-    title: "City study",
-    category: "City",
-    location: "Add location",
-    src: "",
-    alt: "Add a description of the photograph",
-    orientation: "portrait",
-  },
-  {
-    title: "Travel detail",
-    category: "Travel",
-    location: "Add location",
-    src: "",
-    alt: "Add a description of the photograph",
-    orientation: "square",
-  },
-  {
-    title: "Environmental portrait",
-    category: "People",
-    location: "Add location",
-    src: "",
-    alt: "Add a description of the photograph",
-    orientation: "portrait",
-  },
-  {
-    title: "Architecture and light",
-    category: "City",
-    location: "Add location",
-    src: "",
-    alt: "Add a description of the photograph",
-    orientation: "landscape",
-  },
-  {
-    title: "Open-road story",
-    category: "Travel",
-    location: "Add location",
-    src: "",
-    alt: "Add a description of the photograph",
-    orientation: "landscape",
-  },
+  // {
+  //   title: "City study",
+  //   category: "City",
+  //   location: "Add location",
+  //   src: "",
+  //   alt: "Add a description of the photograph",
+  //   orientation: "portrait",
+  // },
+  // {
+  //   title: "Travel detail",
+  //   category: "Travel",
+  //   location: "Add location",
+  //   src: "",
+  //   alt: "Add a description of the photograph",
+  //   orientation: "square",
+  // },
+  // {
+  //   title: "Environmental portrait",
+  //   category: "People",
+  //   location: "Add location",
+  //   src: "",
+  //   alt: "Add a description of the photograph",
+  //   orientation: "portrait",
+  // },
+  // {
+  //   title: "Architecture and light",
+  //   category: "City",
+  //   location: "Add location",
+  //   src: "",
+  //   alt: "Add a description of the photograph",
+  //   orientation: "landscape",
+  // },
+  // {
+  //   title: "Open-road story",
+  //   category: "Travel",
+  //   location: "Add location",
+  //   src: "",
+  //   alt: "Add a description of the photograph",
+  //   orientation: "landscape",
+  // },
 ];
