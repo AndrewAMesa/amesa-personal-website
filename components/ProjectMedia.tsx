@@ -62,7 +62,7 @@ export function ProjectMedia({
     >
       <div className="project-visual-topline">
         <span>{category}</span>
-        <span>{period}</span>
+        {/* <span>{period}</span> */}
       </div>
       <div className="project-visual-content">
         <span className="project-visual-mark" aria-hidden="true">{getInitials(title)}</span>
