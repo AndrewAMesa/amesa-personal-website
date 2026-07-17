@@ -4,7 +4,17 @@ import Image from "next/image";
 import { useMemo, useState } from "react";
 import { photographs } from "@/data/site";
 
-const categories = ["All", "Landscape", "City", "Animal", "People"] as const;
+const categories = [
+  "All",
+  "Landscape",
+  "City",
+  "Animal",
+  "People",
+  "Nature",
+  "Landmarks",
+  "Architecture",
+  "Other",
+] as const;
 
 export function PhotographyGallery() {
   const [activeCategory, setActiveCategory] = useState<(typeof categories)[number]>("All");
@@ -59,7 +69,14 @@ export function PhotographyGallery() {
           >
             <div className="photo-frame">
               {photo.src ? (
-                <Image src={photo.src} alt={photo.alt} fill sizes="(max-width: 760px) 100vw, 50vw" />
+                <Image
+  src={photo.src}
+  alt={photo.alt}
+  fill
+  sizes="(max-width: 760px) 100vw, 50vw"
+  className={photo.orientation}
+/>
+
               ) : (
                 <div className="photo-placeholder">
                   <span>{photo.category.toUpperCase()}</span>

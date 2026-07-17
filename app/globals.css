@@ -1242,24 +1242,36 @@ main {
 
 .photo-frame {
   position: relative;
-  min-height: 360px;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  min-height: 0;
   overflow: hidden;
   border: 1px solid var(--line);
-  background: var(--surface);
   border-radius: 5px;
+  background: var(--surface);
 }
 
-.photo-card.portrait .photo-frame {
-  min-height: 520px;
-}
-
-.photo-card.landscape .photo-frame {
-  min-height: 360px;
-}
-
+/*
+ * Next.js Image uses fill, so the frame controls the displayed size.
+ * Landscape and square photos fill the shared frame, while portrait
+ * photos remain fully visible without being stretched or cropped.
+ */
 .photo-frame img {
   object-fit: cover;
 }
+
+.photo-frame img.portrait {
+  object-fit: contain;
+  object-position: center;
+}
+
+.photo-frame img.landscape,
+.photo-frame img.square {
+  object-fit: cover;
+  object-position: center;
+}
+
+
 
 .photo-placeholder {
   min-height: inherit;
@@ -2399,13 +2411,9 @@ a.document-card:hover {
     flex-direction: column;
   }
 
-  .photo-card.landscape .photo-frame,
   .photo-frame {
-    min-height: 280px;
-  }
-
-  .photo-card.portrait .photo-frame {
-    min-height: 420px;
+    aspect-ratio: 16 / 10;
+    min-height: 0;
   }
 
   .filter-row {
