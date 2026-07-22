@@ -388,7 +388,7 @@ export const recognition: Recognition[] = [
 export const organizations = [
   {
     name: "Hispanic Scholarship Fund",
-    href: "https://www.hsf.net/",
+    href: "https://www.hsf.net/about/hsf-team/advisory-councils/new-york-advisory-council/andrew-mesa",
     period: "Jun 2021 — Present",
     roles: ["Advisory Council Member (2026 — Present)", "Alumnus (2025 — Present)", "Volunteer Lead (2026)", "Mentor-in-Training (2024)", "Scholar (2021 — 2025)"],
     description:
