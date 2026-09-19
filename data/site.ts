@@ -13,7 +13,7 @@ export const site = {
   role: "Software Engineer I at Datadog",
   team: "Analytics and Data Platform - Developer Experience",
   location: "New York, NY",
-  domain: "https://andrewamesa.com",ki
+  domain: "https://andrewamesa.com",
   email: "aamesa03@gmail.com",
   calendly: "https://calendly.com/aamesa",
   headline: "Software Engineer at Datadog.",
