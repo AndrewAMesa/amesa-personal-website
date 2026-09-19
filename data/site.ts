@@ -13,7 +13,7 @@ export const site = {
   role: "Software Engineer I at Datadog",
   team: "Analytics and Data Platform - Developer Experience",
   location: "New York, NY",
-  domain: "https://andrewamesa.com",
+  domain: "https://andrewamesa.com",ki
   email: "aamesa03@gmail.com",
   calendly: "https://calendly.com/aamesa",
   headline: "Software Engineer at Datadog.",
@@ -119,9 +119,12 @@ export const experiences: Experience[] = [
     workMode: "Full-time · On-site",
     team: "Analytics and Data Platform - Developer Experience",
     highlights: [
-      "- Member of Datadog's ADP-DevX team in New York City.",
+      "- Led a zero-downtime cross-org GitHub migration of a company-critical monorepo while hardening the repo’s internal auth by moving it to short-lived, identity-scoped tokens via an in-house octo-sts flow, retiring long-lived per-data-center credentials.",
+      "- Designed the internal Flink build pipeline on a Conductor-based dynamic-build system, replacing custom GitLab CI jobs with cached, incremental Docker builds that cut deploy time and made Flink releases self-service, removing the platform team as a bottleneck for downstream Flink users.",
+      "- Contributed to a multi-repo Python 3.12 upgrade across CI images, Kubernetes runners, and developer environments, clearing Python 3.10 EOL exposure and unblocking stalled dependency upgrades.",
+      "- Consolidated an internal developer CLI into the team’s central Python tooling, giving engineers a single discoverable entry point.",
     ],
-    skills: ["Terraform", "Continuous Integration", "Software Engineering", "Developer Experience"],
+    skills: ["Terraform", "Continuous Integration", "Amazon Web Services", "Python", "Apache Flink", "Repository Management", "Docker", "Identity and Access Management"],
   },
   {
     period: "May 2024 — Aug 2024",
@@ -245,30 +248,37 @@ export const certifications = [
 ];
 
 export const skillGroups = [
+
   {
     title: "Programming languages",
     skills: ["Go", "Python", "Java", "C", "C++", "JavaScript", "TypeScript", "R", "SQL", "Assembly"],
   },
+
   {
     title: "Web and mobile",
     skills: ["React", "Next.js", "React Native", "Android Development", "HTML", "CSS", "REST APIs", "API Development"],
   },
+
   {
     title: "Backend, cloud, and infrastructure",
-    skills: ["AWS", "gRPC", "NoSQL", "Database Design", "Terraform", "Continuous Integration", "Git", "GitHub Enterprise"],
+    skills: ["AWS", "gRPC", "NoSQL", "Database Design", "Terraform", "Continuous Integration", "Git", "GitHub Enterprise", "Docker", "Apache Flink", "Repository Management"],
   },
+
   {
     title: "AI and data",
     skills: ["Artificial Intelligence", "Machine Learning", "Prompt Engineering", "OpenAI API", "Pandas", "Data Mining"],
   },
+
   {
     title: "Systems and security",
-    skills: ["Embedded Systems", "Linux", "Operating Systems", "Computer Networks", "Network and Device Security", "Firmware"],
+    skills: ["Embedded Systems", "Linux", "Operating Systems", "Computer Networks", "Network and Device Security", "Identity and Access Management", "Firmware"],
   },
+
   {
     title: "Research, design, and collaboration",
     skills: ["Full-Stack Development", "Project Management", "Research", "Leadership", "Communication", "SOLIDWORKS", "Adobe Creative Suite", "WordPress", "Robotics"],
   },
+
 ];
 
 export const coursework = [
