@@ -1,36 +1,49 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Andrew Mesa — Personal Website
 
-## Getting Started
+My personal website brings together my software engineering work, projects, photography, and community involvement.
 
-First, run the development server:
+I’m a Software Engineer at Datadog in New York City and a Worcester Polytechnic Institute graduate with degrees in Computer Science and Data Science. Originally from Boise, Idaho, I enjoy building software, exploring new places, and documenting them through photography.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**[Visit my website →](https://andrewamesa.com)**
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## What’s Included
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### About Me
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+An introduction to my background, education, technical skills, and interests, including full-stack development, artificial intelligence, accessibility, embedded systems, and developer infrastructure.
 
-## Learn More
+### Professional Experience
 
-To learn more about Next.js, take a look at the following resources:
+My work history, including roles at Datadog, LinkedIn, and HP, with highlights of my contributions and the technologies I’ve worked with.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Projects
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+A filterable collection of projects across applications, AI and data, research, creative work, and service. Featured projects include:
 
-## Deploy on Vercel
+- **Dual-Mode Language-Model Mobile Assistant** — An accessible mobile application integrated with smart glasses, supporting online and offline assistance for blind and visually impaired users.
+- **Boston Freedom Trail Walking Guide** — An interactive guide with live location, historic information, and progress badges.
+- **AI Travel Itinerary and Booking Assistant** — A travel assistant combining language models with flight and hotel data.
+- **Brand Research for Haus für Poesie** — Research and recommendations developed with a poetry organization in Berlin.
+- **Seasonal LED Tree Sculpture** — A physical computing project featuring 300 individually addressable LEDs.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Project entries include descriptions, technologies, and links to repositories, demos, or research materials where available.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Photography
+
+A filterable gallery of travel and everyday photography, including images from Bosnia and Herzegovina, Croatia, and New York. Each photograph includes its title, location, and category.
+
+### Community & Recognition
+
+My involvement with organizations including the Hispanic Scholarship Fund, SHPE, FIRST Robotics, Scouting America, and ColorStack, alongside volunteering, leadership, and awards.
+
+### Documents
+
+Links to my résumé, research papers, project reports, posters, and presentation materials.
+
+### Contact
+
+Ways to connect through email, LinkedIn, GitHub, YouTube, and Instagram, or schedule a meeting.
+
+## Built With
+
+Next.js, React, TypeScript, and CSS.
