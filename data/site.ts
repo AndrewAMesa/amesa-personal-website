@@ -795,7 +795,7 @@ export const documents: Array<{
     type: "Resume",
     description:
       "A summary of my work, projects, and accomplishments within the fields of Computer Science and Data Science.",
-    href: "https://www.linkedin.com/in/andrew-a-mesa/overlay/1751941295097/single-media-viewer/?profileId=ACoAADbHmCsBXUZzROfU2IGodb6QNq5qkStuprs",
+    href: "https://www.linkedin.com/in/andrew-a-mesa/overlay/1789827755262/single-media-viewer/?profileId=ACoAADbHmCsBXUZzROfU2IGodb6QNq5qkStuprs",
     external: true,
   },
 ];
