@@ -819,10 +819,10 @@ export const photographs: Photograph[] = [
     orientation: "landscape",
   },
   {
-    title: "Sunset of the Hudson",
+    title: "Sunset over the Hudson",
     category: "Landscape",
     location: "New York, USA",
-    src: "/photography/sunset_of_the_hudson.jpg",
+    src: "/photography/sunset_over_the_hudson.jpg",
     alt: "A breathtaking sunset over the Hudson River in New York, USA.",
     orientation: "landscape",
   },
