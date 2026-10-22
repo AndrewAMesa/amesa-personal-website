@@ -811,6 +811,54 @@ export type Photograph = {
 
 export const photographs: Photograph[] = [
   {
+    title: "Tiny Traffic Jam",
+    category: "City",
+    location: "Montreal, Canada",
+    src: "/photography/tiny_traffic_jam.jpg",
+    alt: "A tiny lineup of Fiat 500s in Montreal, Canada.",
+    orientation: "landscape",
+  },
+  {
+    title: "Sunset of the Hudson",
+    category: "Landscape",
+    location: "New York, USA",
+    src: "/photography/sunset_of_the_hudson.jpg",
+    alt: "A breathtaking sunset over the Hudson River in New York, USA.",
+    orientation: "landscape",
+  },
+  {
+    title: "Polly Wants a Pillow",
+    category: "Animal",
+    location: "Montreal, Canada",
+    src: "/photography/polly_wants_a_pillow.jpg",
+    alt: "A macaw resting on its branch in Montreal, Canada.",
+    orientation: "landscape",
+  },
+  {
+    title: "Falcon in Flight",
+    category: "Animal",
+    location: "American Natural History Museum, New York, USA",
+    src: "/photography/falcon_in_flight.jpg",
+    alt: "A falcon posed in mid-flight.",
+    orientation: "landscape",
+  },
+  {
+    title: "Docked by the Harbor",
+    category: "City",
+    location: "Copenhagen, Denmark",
+    src: "/photography/docked_by_the_harbor.jpg",
+    alt: "Boats resting along Copenhagen's historic waterfront.",
+    orientation: "landscape",
+  },
+  {
+    title: "Carousel of Dreams",
+    category: "Landmarks",
+    location: "Copenhagen, Denmark",
+    src: "/photography/carousel_of_dreams.jpg",
+    alt: "The iconic carousel in Copenhagen, Denmark.",
+    orientation: "landscape",
+  },
+  {
     title: "Neighborhood Watch",
     category: "Animal",
     location: "Sarajevo, Bosnia and Herzegovina",
@@ -818,7 +866,7 @@ export const photographs: Photograph[] = [
     alt: "A local cat keeping an eye on the neighborhood during golden hour.",
     orientation: "landscape",
   },
-    {
+  {
     title: "Over Sarajevo",
     category: "Landscape",
     location: "Sarajevo, Bosnia and Herzegovina",
@@ -842,14 +890,6 @@ export const photographs: Photograph[] = [
     alt: "A bird perched peacefully among the gardens of The Cloisters.",
     orientation: "landscape",
   },
-  // {
-  //   title: "By the Cliffside",
-  //   category: "Nature",
-  //   location: "Bosnia and Herzegovina",
-  //   src: "/photography/Brooklyn_Transit_Museum.jpg",
-  //   alt: "A charming house in Bosnia.",
-  //   orientation: "portrait",
-  // },
   {
     title: "In Prayer",
     category: "Other",
@@ -866,14 +906,6 @@ export const photographs: Photograph[] = [
     alt: "Boats resting along Dubrovnik's historic waterfront.",
     orientation: "landscape",
   },
-  // {
-  //   title: "Minute Man",
-  //   category: "Landmarks",
-  //   location: "Lexington and Concord, Massachusetts, USA",
-  //   src: "/photography/Minute_Man_Statue_Boston.JPG",
-  //   alt: "The Minute Man statue standing proudly in Boston.",
-  //   orientation: "portrait",
-  // },
   {
     title: "Old Bridge",
     category: "Landmarks",
